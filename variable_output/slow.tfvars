@@ -1,0 +1,2 @@
+content=slow
+sleep_duration=30
