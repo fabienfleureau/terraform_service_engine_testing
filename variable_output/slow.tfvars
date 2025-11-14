@@ -1,2 +1,2 @@
-content=slow
-sleep_duration=30
+content = "slow"
+sleep_duration = 30

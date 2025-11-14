@@ -1,2 +1,2 @@
-content=fast
-sleep_duration=5
+content = "fast"
+sleep_duration = 5
