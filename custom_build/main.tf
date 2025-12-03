@@ -16,10 +16,10 @@ resource "null_resource" "staging_delay" {
 }
 
 data "external" "fortune_cowsay" {
-  program = ["sh", "-c", "echo '{\"message\":\"'$(fortune | cowsay | base64 -w0)'\"}'"]
+  program = ["sh", "-c", "echo '{\"message\":\"'$(fortune | base64 -w0)'\"}'"]
 }
 
 output "fortune_cowsay" {
-  description = "Fortune message displayed by cowsay"
+  description = "Fortune message"
   value       = base64decode(data.external.fortune_cowsay.result.message)
 }
