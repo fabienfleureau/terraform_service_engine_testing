@@ -6,6 +6,7 @@ variable "content" {
 variable "sleep_duration" {
   description = "Duration to sleep in seconds"
   type        = number
+  nullable    = false
   default     = 120  # 2 minutes default
 }
 
